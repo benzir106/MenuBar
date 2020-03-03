@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerlayoutId"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tolMenubar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Green"
+
+            />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavMenuId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_nav_menu_item"
+            android:background="@color/Green"
+            app:itemIconTint="@color/nav_item_color"
+            app:itemTextColor="@color/nav_item_color"
+            app:labelVisibilityMode="labeled"
+
+            />
+
+        <FrameLayout
+            android:id="@+id/framId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tolMenubar"
+            android:layout_above="@id/bottomNavMenuId"/>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/navemenu"
+        app:itemIconTint="@color/Black"
+        app:itemTextColor="@color/Black"
+        android:background="@color/DarkGray"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navegation_headder"
+        android:layout_marginTop="@dimen/abc_action_bar_default_height_material">
+
+        <ExpandableListView
+            android:id="@+id/expended_menuId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:groupIndicator="@null"
+            android:dividerHeight="0dp"
+            android:layout_marginTop="500dp"
+
+            />
+
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

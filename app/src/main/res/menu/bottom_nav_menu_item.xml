@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/emailId"
+        android:title="Email"
+        android:icon="@drawable/ic_email_black_24dp"/>
+    <item
+        android:id="@+id/homeId"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+    <item
+        android:id="@+id/locationId"
+        android:title="Location"
+        android:icon="@drawable/ic_location_on_black_24dp"/>
+    <item
+        android:id="@+id/callId"
+        android:title="Call"
+        android:icon="@drawable/ic_call_"/>
+
+
+
+</menu>
