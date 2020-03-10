@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         drawerLayout=findViewById(R.id.drawerlayoutId);
+        drawerLayout.setScrimColor(getResources().getColor(R.color.Transparant));
+
         toolbar=findViewById(R.id.tolMenubar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Home");
